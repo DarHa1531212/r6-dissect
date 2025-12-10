@@ -121,13 +121,13 @@ func (r *Reader) roundEnd() {
 			winningTeamIndex = 1
 		}
 
-		if deaths[0] == sizes[0] && winningTeamIndex == 1 {
+		if deaths[0] == sizes[0] {
 			r.Header.Teams[1].Won = true
 			r.Header.Teams[0].Won = false
 			r.Header.Teams[1].WinCondition = KilledOpponents
 			return
 		}
-		if deaths[1] == sizes[1] && winningTeamIndex == 0 {
+		if deaths[1] == sizes[1] {
 			r.Header.Teams[0].Won = true
 			r.Header.Teams[1].Won = false
 			r.Header.Teams[0].WinCondition = KilledOpponents
