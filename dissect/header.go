@@ -98,6 +98,7 @@ const (
 	Tower               Map = 53627213396
 	Villa               Map = 88107330328
 	Fortress            Map = 126196841359
+	FortressY10         Map = 398899676157
 	HerefordBase        Map = 127951053400
 	ThemePark           Map = 199824623654
 	Oregon              Map = 231702797556
